@@ -18,8 +18,8 @@ Inputs are in the following order:
 overloaded to omit ostream object; function output can
 notify of failure.
 
-Output is a std::vector of std::array<double,3> where array's position
-[0] is t-value, [1] is est. y value, [2] is step size used in the
+Output is a `std::vector` of `std::array<double,3>` where array's position
+`[0]` is t-value, `[1]` is est. y value, `[2]` is step size used in the
 calculations to arrive at t- and est. y-values. If the step size drop-
 ped below the minimum the function will return an empty vector.
 
