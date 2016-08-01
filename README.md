@@ -7,16 +7,16 @@ are used here. It will solve IVPs of the form:
 a <= t <= b; y(a)=*alpha*; y'=f(t,y).
 
 Inputs are in the following order:
-..**a**: minimum of t-range;
-..**b**: maximum of t-range;
-..**_alpha_**: initial value;
-..**TOL**: error tolerance;
-..**hmin**: minimum step size;
-..**hmax**: maximum step size;
-..**function pointer**: see below;
-..**os**: output stream object for failure text; function is 
-..        overloaded to omit ostream object; function output can
-..        notify of failure.
+..* **a**: minimum of t-range;
+..* **b**: maximum of t-range;
+..* **_alpha_**: initial value;
+..* **TOL**: error tolerance;
+..* **hmin**: minimum step size;
+..* **hmax**: maximum step size;
+..* **function pointer**: see below;
+..* **os**: output stream object for failure text; function is 
+...        overloaded to omit ostream object; function output can
+...        notify of failure.
 
 Output is a std::vector of std::array<double,3> where array's position
 [0] is t-value, [1] is est. y value, [2] is step size used in the
