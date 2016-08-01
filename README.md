@@ -20,12 +20,12 @@ notify of failure.
 
 Output is a `std::vector` of `std::array<double,3>` where array's position
 `[0]` is t-value, `[1]` is est. y value, `[2]` is step size used in the
-calculations to arrive at t- and est. y-values. If the step size drop-
-ped below the minimum the function will return an empty vector.
+calculations to arrive at t- and est. y-values. If the step size dropped
+below the minimum the function will return an empty vector.
 
 
-This solver takes a function pointer parameter (function accepting two
-'long double's and returning a 'long double') so that any first-order
+This solver takes a function pointer parameter \(function accepting two
+'long double's and returning a 'long double'\) so that any first-order
 ODE may be solved. A good, simple format for such a function is:
 
 ```
